@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSE Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' };
+  </script>
+</head>
+<body class="relative bg-white text-slate-900 dark:bg-[#0b1220] dark:text-slate-100 transition-colors duration-300">
+  <div class="pointer-events-none fixed inset-0 -z-10 hidden dark:block">
+    <div class="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-blue-500/10 blur-3xl"></div>
+    <div class="absolute top-1/3 -right-24 h-80 w-80 rounded-full bg-cyan-400/10 blur-3xl"></div>
+  </div>
+  <nav class="sticky top-0 z-50 border-b border-slate-200/10 bg-white/90 dark:bg-[#0b1220]/90 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <h1 class="text-xl font-bold tracking-tight">Portfolio</h1>
+      <div class="flex items-center gap-6">
+        <div class="flex items-center gap-3">
+          <a href="https://www.linkedin.com/in/yanis-hasan-khan-7109b5362/" target="_blank" class="inline-flex items-center gap-2 rounded-full bg-blue-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-blue-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg><span>LinkedIn</span></a>
+          <a href="https://github.com/2FAST4Uh" target="_blank" class="inline-flex items-center gap-2 rounded-full border border-slate-300 dark:border-slate-700 px-4 py-2 text-sm font-medium transition hover:bg-slate-100 dark:hover:bg-slate-900"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3"></path><path d="M15 22v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7a5.44 5.44 0 0 0-1.5-3.75 5.07 5.07 0 0 0-.09-3.77s-1.18-.35-3.91 1.48a13.38 13.38 0 0 0-7 0C5.27.65 4.09 1 4.09 1a5.07 5.07 0 0 0-.09 3.77 5.44 5.44 0 0 0-1.5 3.75c0 5.42 3.3 6.61 6.44 7a3.37 3.37 0 0 0-.94 2.61V22"></path></svg><span>GitHub</span></a>
+        </div>
+        <div class="flex items-center gap-3">
+          <span id="themeIndicator" class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-slate-200 text-slate-700 dark:bg-slate-800 dark:text-slate-200 border border-slate-300 dark:border-slate-700" aria-hidden="true">
+            <svg id="themeSun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 hidden"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+            <svg id="themeMoon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 hidden"><path d="M12 3a6 6 0 1 0 9 9 9 9 0 1 1-9-9"></path></svg>
+          </span>
+          <button id="themeToggle" class="w-12 h-6 rounded-full bg-slate-300 dark:bg-slate-700 flex items-center px-1 transition" aria-label="Toggle theme">
+            <span class="w-4 h-4 rounded-full bg-white dark:translate-x-6 transition-transform duration-300"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-6 py-12 space-y-20">
+    <section class="reveal relative overflow-hidden rounded-3xl grid md:grid-cols-2 gap-10 items-center px-8 py-16 min-h-[32rem]">
+      <img src="herobg.jpg" alt="Background" class="absolute inset-0 w-full h-full object-cover object-center">
+      <div class="absolute inset-0 bg-slate-950/70"></div>
+      <div class="relative z-10 space-y-5 max-w-xl rounded-3xl border border-white/10 bg-white/10 dark:bg-white/5 backdrop-blur-xl shadow-2xl p-8">
+        <p class="text-sm uppercase tracking-[0.3em] text-blue-400">Frontend Developer</p>
+        <h1 class="text-3xl md:text-4xl font-semibold text-white">Yanis Hasan Khan</h1>
+        <h2 class="text-4xl md:text-5xl font-bold leading-tight text-white">B.Tech in Computer Science &amp; Engineering (CSE)</h2>
+        <p class="text-slate-200 text-lg leading-8">Building responsive digital experiences with modern frontend technologies, practical development workflows, and a strong foundation in engineering.</p>
+      </div>
+      <div class="relative z-10 flex justify-center md:justify-end md:pr-6">
+        <div class="w-80 h-80 p-3 rounded-2xl border-4 border-slate-300 dark:border-slate-700 bg-white/10 dark:bg-slate-900/30 shadow-2xl">
+          <img src="profile.jpg" alt="Profile" class="w-full h-full max-w-full rounded-xl object-cover">
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal"><h3 class="text-2xl font-semibold mb-6">Core Development</h3><div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4"><div class="p-5 rounded-2xl bg-slate-100 dark:bg-slate-900 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:border dark:hover:border-blue-400/40">Python</div><div class="p-5 rounded-2xl bg-slate-100 dark:bg-slate-900 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:border dark:hover:border-blue-400/40">C</div><div class="p-5 rounded-2xl bg-slate-100 dark:bg-slate-900 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:border dark:hover:border-blue-400/40">HTML/CSS</div><div class="p-5 rounded-2xl bg-slate-100 dark:bg-slate-900 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:border dark:hover:border-blue-400/40">JavaScript</div><div class="p-5 rounded-2xl bg-slate-100 dark:bg-slate-900 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:border dark:hover:border-blue-400/40">Bootstrap</div></div></section>
+
+    <section class="reveal"><h3 class="text-2xl font-semibold mb-6">DevOps &amp; Tools</h3><div class="grid md:grid-cols-2 gap-6"><div class="p-6 rounded-2xl bg-slate-100 dark:bg-slate-900 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:border dark:hover:border-blue-400/40"><h4 class="font-semibold text-lg mb-2">GitHub Operations</h4><p class="text-slate-600 dark:text-slate-300">Version control, repository management, collaboration workflows, branching strategies, and deployment-oriented source management.</p></div><div class="p-6 rounded-2xl bg-slate-100 dark:bg-slate-900 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:border dark:hover:border-blue-400/40"><h4 class="font-semibold text-lg mb-2">Linux System Basics</h4><p class="text-slate-600 dark:text-slate-300">Command line navigation, file permissions, shell usage, package management, and foundational server-side administration.</p></div></div></section>
+
+    <section class="reveal"><h3 class="text-2xl font-semibold mb-6">Projects</h3><div class="grid md:grid-cols-2 gap-6"><article class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-900 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:hover:border-blue-400/40"><h4 class="text-xl font-semibold mb-3">Smart Medication Reminder</h4><p class="text-slate-600 dark:text-slate-300 leading-7 mb-4">An Android application utilizing <strong>MVVM architecture</strong> and <strong>Room Database</strong> to automate medication schedules. Features include an OCR tool to identify medicine names from handwritten prescriptions and SMS integration for missed alerts.</p><div class="flex flex-wrap gap-2 mb-5"><span class="inline-flex items-center rounded-full bg-slate-200 dark:bg-slate-700 px-3 py-1 text-xs font-medium text-slate-700 dark:text-slate-300">Android Studio</span><span class="inline-flex items-center rounded-full bg-slate-200 dark:bg-slate-700 px-3 py-1 text-xs font-medium text-slate-700 dark:text-slate-300">MVVM</span><span class="inline-flex items-center rounded-full bg-slate-200 dark:bg-slate-700 px-3 py-1 text-xs font-medium text-slate-700 dark:text-slate-300">Room DB</span><span class="inline-flex items-center rounded-full bg-slate-200 dark:bg-slate-700 px-3 py-1 text-xs font-medium text-slate-700 dark:text-slate-300">OCR</span><span class="inline-flex items-center rounded-full bg-slate-200 dark:bg-slate-700 px-3 py-1 text-xs font-medium text-slate-700 dark:text-slate-300">SMS system</span></div><div class="flex gap-3"><a href="https://github.com/2FAST4Uh/MediMinderApp" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-full bg-blue-600 px-4 py-2 text-xs font-semibold text-white transition hover:bg-blue-500">View Project</a><a href="#" class="inline-flex items-center rounded-full border border-slate-300 dark:border-slate-600 px-4 py-2 text-xs font-semibold transition hover:bg-slate-200 dark:hover:bg-slate-800">Source Code</a></div></article><article class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-900 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:hover:border-blue-400/40"><h4 class="text-xl font-semibold mb-3">Chai Garam Pocket Cafe</h4><p class="text-slate-600 dark:text-slate-300 leading-7 mb-4">A full-stack web application designed for a cafe management solution. Built using <strong>React</strong> for a dynamic frontend and integrated with <strong>Firebase</strong> for real-time data persistence and authentication.</p><div class="flex flex-wrap gap-2 mb-5"><span class="inline-flex items-center rounded-full bg-slate-200 dark:bg-slate-700 px-3 py-1 text-xs font-medium text-slate-700 dark:text-slate-300">React</span><span class="inline-flex items-center rounded-full bg-slate-200 dark:bg-slate-700 px-3 py-1 text-xs font-medium text-slate-700 dark:text-slate-300">Firebase</span><span class="inline-flex items-center rounded-full bg-slate-200 dark:bg-slate-700 px-3 py-1 text-xs font-medium text-slate-700 dark:text-slate-300">Real-time DB</span><span class="inline-flex items-center rounded-full bg-slate-200 dark:bg-slate-700 px-3 py-1 text-xs font-medium text-slate-700 dark:text-slate-300">Authentication</span></div><div class="flex gap-3"><a href="https://github.com/cod4r/chai-garam-pocket-cafe" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-full bg-blue-600 px-4 py-2 text-xs font-semibold text-white transition hover:bg-blue-500">View Project</a><a href="#" class="inline-flex items-center rounded-full border border-slate-300 dark:border-slate-600 px-4 py-2 text-xs font-semibold transition hover:bg-slate-200 dark:hover:bg-slate-800">Source Code</a></div></article></div></section>
+
+    <section class="reveal"><h3 class="text-2xl font-semibold mb-6">Professional Suite</h3><div class="p-6 rounded-2xl bg-slate-100 dark:bg-slate-900 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:border dark:hover:border-blue-400/40"><p class="text-slate-600 dark:text-slate-300">Proficient in Microsoft Office tools including Word, Excel, PowerPoint, and modern productivity workflows for documentation, reporting, and presentations.</p></div></section>
+
+    <section class="reveal"><h3 class="text-2xl font-semibold mb-6">You can talk me in</h3><div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4"><div class="p-5 rounded-2xl bg-slate-100 dark:bg-slate-900 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:border dark:hover:border-blue-400/40">Hindi</div><div class="p-5 rounded-2xl bg-slate-100 dark:bg-slate-900 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:border dark:hover:border-blue-400/40">Urdu</div><div class="p-5 rounded-2xl bg-slate-100 dark:bg-slate-900 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:border dark:hover:border-blue-400/40">French</div><div class="p-5 rounded-2xl bg-slate-100 dark:bg-slate-900 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:border dark:hover:border-blue-400/40">English</div></div></section>
+
+    <section class="reveal"><h3 class="text-2xl font-semibold mb-6">Contact Me</h3><div class="grid md:grid-cols-3 gap-6"><div class="p-6 rounded-2xl bg-slate-100 dark:bg-slate-900 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:border dark:hover:border-blue-400/40"><p class="text-sm uppercase tracking-wide text-slate-500 dark:text-slate-400 mb-2">Mail ID</p><p class="text-slate-800 dark:text-slate-200 font-medium break-all">yanishasankhan@gmail.com</p></div><div class="p-6 rounded-2xl bg-slate-100 dark:bg-slate-900 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:border dark:hover:border-blue-400/40"><p class="text-sm uppercase tracking-wide text-slate-500 dark:text-slate-400 mb-2">Class</p><p class="text-slate-800 dark:text-slate-200 font-medium">B.Tech CSE</p></div><div class="p-6 rounded-2xl bg-slate-100 dark:bg-slate-900 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:border dark:hover:border-blue-400/40"><p class="text-sm uppercase tracking-wide text-slate-500 dark:text-slate-400 mb-2">Roll No</p><p class="text-slate-800 dark:text-slate-200 font-medium">2K24CSUN01211</p></div></div></section>
+
+    <section class="reveal"><h3 class="text-2xl font-semibold mb-6">Other Specialities</h3><div class="grid md:grid-cols-3 gap-6"><div class="rounded-3xl border border-blue-500/20 bg-gradient-to-br from-blue-600/10 to-slate-100 dark:to-slate-900 p-6"><h4 class="text-xl font-semibold mb-3">Automotive Knowledge</h4><p class="text-slate-700 dark:text-slate-300 leading-7">Strong expertise in automobile engineering, vehicle systems, EV technology, performance analysis, and evolving global automotive trends.</p></div><div class="rounded-3xl border border-blue-500/20 bg-gradient-to-br from-blue-600/10 to-slate-100 dark:to-slate-900 p-6"><h4 class="text-xl font-semibold mb-3">Mobile Photography</h4><p class="text-slate-700 dark:text-slate-300 leading-7">Experienced in framing, lighting, portrait capture, and creative smartphone photography with an eye for cinematic composition.</p></div><div class="rounded-3xl border border-blue-500/20 bg-gradient-to-br from-blue-600/10 to-slate-100 dark:to-slate-900 p-6"><h4 class="text-xl font-semibold mb-3">Video Editing</h4><p class="text-slate-700 dark:text-slate-300 leading-7">Capable of editing engaging videos with transitions, color balancing, pacing, and polished storytelling for digital platforms.</p></div></div></section>
+  </main>
+
+  <script>
+    const root = document.documentElement;
+    const toggle = document.getElementById('themeToggle');
+    const themeSun = document.getElementById('themeSun');
+    const themeMoon = document.getElementById('themeMoon');
+    const savedTheme = localStorage.getItem('theme');
+
+    function updateThemeIndicator() {
+      const isDark = root.classList.contains('dark');
+      themeMoon.classList.toggle('hidden', !isDark);
+      themeSun.classList.toggle('hidden', isDark);
+    }
+
+    if (savedTheme === 'light') root.classList.remove('dark');
+    updateThemeIndicator();
+    toggle.addEventListener('click', () => {
+      root.classList.toggle('dark');
+      localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');
+      updateThemeIndicator();
+    });
+
+    const title = document.querySelector('h2');
+    const text = title.textContent;
+    title.textContent = '';
+    let index = 0;
+    function typeTitle() {
+      if (index < text.length) {
+        title.textContent += text.charAt(index++);
+        setTimeout(typeTitle, 55);
+      }
+    }
+    typeTitle();
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove('opacity-0', 'translate-y-6');
+          entry.target.classList.add('opacity-100', 'translate-y-0');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.reveal').forEach(section => {
+      section.classList.add('opacity-0', 'translate-y-6', 'transition-all', 'duration-700');
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
